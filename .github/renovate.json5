@@ -11,16 +11,18 @@
         'github-actions',
       ],
       schedule: [
-        '* * 2 * *', // monthly, on the 2nd
+        '* 0-3 2 * *', // monthly, on the 2nd, midnight-4am
       ],
+      timezone: 'America/Los_Angeles',
     },
     {
       matchManagers: [
         '!github-actions',
       ],
       schedule: [
-        '* * 2 * *', // monthly, on the 2nd
+        '* 0-3 2 * *', // monthly, on the 2nd, midnight-4am
       ],
+      timezone: 'America/Los_Angeles',
     },
   ],
   "labels": [
